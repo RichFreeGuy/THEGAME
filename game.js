@@ -1,3 +1,5 @@
+let Points = 0;
+let playerName = "";
 function startGame() {
     playerName = document.getElementById("nameInput").value.trim();
     if (!playerName) {
@@ -8,7 +10,38 @@ function startGame() {
     document.getElementById("rules").style.display = "none";
     document.getElementById("game").style.display = "block";
 
+function resetGame() {
+    dalcoins = 0;
+    clicks = 0;
+    autoClicker = false;
+    document.getElementById("game").style.display = "none";
+    document.getElementById("rules").style.display = "block";
+    document.getElementById("modMenu").style.display = "none";
+    modMode = false;
+    alert("Game reset!");
+}
 
+// Rename Player
+function rename() {
+    let newName = prompt("Enter new name:");
+    if (newName) {
+        playerName = newName;
+        document.getElementById("playerName").innerText = playerName;
+        if (playerName === "DALIUSBOYS") {
+            modMode = true;
+            document.getElementById("modMenu").style.display = "block";
+        } else {
+            modMode = false;
+            document.getElementById("modMenu").style.display = "none";
+        }
+    }
+}
+
+// Toggle Dropdown Menu
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
 function draw() {
 if (keyDown(up) {
   Jimbo.velocityY = -2;
