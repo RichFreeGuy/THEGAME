@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalius Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome To The Game</h1>
+    <div id="Name">
+        <p>Enter your name:</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="startGame()">Start</button>
+    </div>
+
+    <div id="game">
+        <h2>Welcome, <span id="playerName"></span>!</h2>
+        <p>Points: <span id="points">0</span></p>
+        <img id="face" src="dalius.png" onclick="clickDalius()" alt="Dalius Face">
+        
+        <h3>Upgrade:</h3>
+        <button class="upgrade" onclick="buyUpgrade(1)"> Spead (5 Points)</button>
+
+
+        
+    <div id="dropdown" onclick="toggleMenu()">☰</div>
+    <div id="menu">
+        <button onclick="resetGame()">Reset Game</button>
+        <button onclick="rename()">Rename</button>
+        <a href="https://www.roblox.com/RichFreeGuy/" target="_blank">
+            <button>Donate Robux</button>
+        </a>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="game.js"></script>
+
+</body>
+</html>
