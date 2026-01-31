@@ -1,0 +1,126 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: #12124;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Game Title */
+h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 0px 0px 10px #ffcc00;
+}
+
+/* Rules Section */
+#Name {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Input Field */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+
+
+/* Game Section */
+#game {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Dalius Face Styling */
+#face {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+
+
+
+/* Point Counter */
+#Points {
+    font-size: 1.5rem;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+/* Upgrades Section */
+.upgrade {
+    background: linear-gradient(90deg, #ff5733, #c70039);
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 87, 51, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Upgrade Hover Effect */
+.upgrade:hover {
+    background: linear-gradient(90deg, #c70039, #ff5733);
+    transform: scale(1.05);
+}
+
+/* Dropdown Button */
+#dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Menu */
+#menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Buttons */
+#menu button {
+    display: block;
+    background: #008cff;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#menu button:hover {
+    background: #005bb5;
+    transform: scale(1.1);
+}
+
+
